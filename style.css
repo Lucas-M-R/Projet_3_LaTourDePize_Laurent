@@ -1,3 +1,30 @@
 *{
     background-color: aquamarine;
 }
+
+body{
+    overflow-y: hidden;
+    width: 100vh;
+    height: 100vh;
+}
+.skat{
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+    #bas{
+    height: 100vh;
+    overflow-y: hidden; 
+}
+
+.about-button{
+    background-color: #514ab4;
+    width: 111px;
+    height: 52px;
+    font-family: 'Good Mood', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    border: solid white 1px;
+    transform: rotate(5deg);
+}
+}
