@@ -1,13 +1,17 @@
 *{
-    background-color: aquamarine;
+    background-color: #262626;
+    color: #ffffff;
 }
 
-body{
+
+/* empêcher le scroll de la page */
+
+/* body{
     overflow-y: hidden;
     width: 100vh;
     height: 100vh;
-}
-.skat{
+} */
+.menu-carte{
     overflow-y: scroll;
     max-height: 100vh;
 }
@@ -15,7 +19,6 @@ body{
     height: 100vh;
     overflow-y: hidden; 
 }
-
 .about-button{
     background-color: #514ab4;
     width: 111px;
@@ -34,4 +37,68 @@ body{
 .about-button:hover{
     transition-duration: 300ms;
     transform: rotate(0deg);
+}
+h1{
+    font-family: 'Good Mood', Arial, Helvetica, sans-serif;
+}
+.menu-item{
+    border: #9EDFFD 7px;
+}
+.accordion-item{
+    background: none;
+    border: none;   
+}
+.accordion-button{
+    background: none;
+}
+.accordion{
+    background: none;
+}
+button.accordion-button h1{
+    margin-left: auto;
+    margin-right: auto;
+    color: #C6A610;
+    font-size: 36px;
+
+}
+.carousel-item.active{
+    border: 7px solid #9EDFFD;
+    border-radius: 43px;
+    max-width: 346px;
+    max-height: 584px;
+}
+.carousel-item.active img{
+    max-width: 240px;
+    max-height: 195px;
+ 
+}
+button.carousel-control-prev{
+    visibility: hidden;
+}
+button.carousel-control-next{
+    visibility: hidden;
+}
+
+
+/* pour enlever la fleche quand le menu est fermé */
+
+.accordion-button:not(.collapsed){
+    background: none;
+}
+
+/* la croix pour fermer le menu */
+
+button.accordion-button:not(.collapsed)::after{
+    background-image: url(img/close_white_36dp.svg);
+    
+}
+
+/* le petit trait en dessous des menus accordéons */
+
+.separateur{
+    
+    width: 42px;
+    border: 5px solid #514AB4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
