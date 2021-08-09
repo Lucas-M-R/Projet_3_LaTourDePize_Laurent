@@ -2,23 +2,27 @@
     background-color: #262626;
     color: #ffffff;
 }
-
+body{
+    background-image: url(img/BG-image.svg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
 
 /* empêcher le scroll de la page */
 
 /* body{
     overflow-y: hidden;
-    width: 100vh;
+    width: 100%;
     height: 100vh;
 } */
-.menu-carte{
+/* .menu-carte{
     overflow-y: scroll;
     max-height: 100vh;
-}
-    #bas{
+} */
+    /* #bas{
     height: 100vh;
     overflow-y: hidden; 
-}
+} */
 .about-button{
     background-color: #514ab4;
     width: 111px;
@@ -48,18 +52,25 @@ h1{
     background: none;
     border: none;   
 }
-.accordion-button{
+button.accordion-button{
     background: none;
+    border: none;
+    box-shadow: none;
 }
-.accordion{
+/* .accordion{
     background: none;
-}
+} */
 button.accordion-button h1{
     margin-left: auto;
     margin-right: auto;
     color: #C6A610;
     font-size: 36px;
+    
 
+}
+.accordion-button::after{
+position: absolute;
+right: 10px; 
 }
 .carousel-item.active{
     border: 7px solid #9EDFFD;
@@ -70,14 +81,14 @@ button.accordion-button h1{
 .carousel-item.active img{
     max-width: 240px;
     max-height: 195px;
- 
 }
+/* 
 button.carousel-control-prev{
     visibility: hidden;
 }
 button.carousel-control-next{
     visibility: hidden;
-}
+} */
 
 
 /* pour enlever la fleche quand le menu est fermé */
@@ -89,8 +100,7 @@ button.carousel-control-next{
 /* la croix pour fermer le menu */
 
 button.accordion-button:not(.collapsed)::after{
-    background-image: url(img/close_white_36dp.svg);
-    
+    background-image: url(img/close_white_36dp.svg);  
 }
 
 /* le petit trait en dessous des menus accordéons */
@@ -102,3 +112,35 @@ button.accordion-button:not(.collapsed)::after{
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
+
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
