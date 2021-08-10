@@ -6,18 +6,18 @@
 
 
 
-body{
+body {
     background-image: url(img/BG-image.svg);
-    background-size: 100% ;
+    background-size: 100%;
     background-repeat: no-repeat;
-    
 
-/* empêcher le scroll de la page */
+
+    /* empêcher le scroll de la page */
     /* overflow-y: hidden;
     width: 100%;
     height: 100vh; */
 
-    font-family: Rubik;
+    font-family: 'Rubik', sans-serif;
     color: white;
     background-color: #262626;
     font-size: 1.5vh;
@@ -25,23 +25,25 @@ body{
 
 }
 
-.center{
+.center {
     display: block;
     margin: auto;
 }
-.logo{
+
+.logo {
     height: 25vh;
     width: 25vh;
     margin-top: 5vh;
 }
 
-p{
+p {
     /* font-size: 2.5vh; */
     margin-bottom: 1vh;
     margin-top: 1vh;
     padding: 0vh;
 }
-.button{
+
+.button {
     height: 7.5vh;
     width: 20vh;
     border: none;
@@ -56,56 +58,69 @@ p{
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: #514ab4;
     text-align: center;
 }
-.btn-yellow{
+
+.btn-yellow {
     background-color: #DDB90D;
     text-align: center;
 }
-.btn-orange{
+
+.btn-orange {
     background-color: #BC3718;
     text-align: center;
 }
+
 @font-face {
     font-family: Good Mood;
     src: url(font/good_mood/Good\ Mood.ttf);
 }
-.icon{
+
+.icon {
     height: 4.3vh;
     width: 4.3vh;
     margin-left: 2vh;
     margin-right: 2vh;
 }
-a{
+
+a {
     text-decoration: none;
     color: none;
 }
-a:hover{
+
+a:hover {
     color: white;
 }
-.logos-group{
-    margin:auto;
+
+.logos-group {
+    margin: auto;
     display: flex;
     margin-top: 2vh;
 }
-.menu{
-    margin:auto;
+
+.menu {
+    margin: auto;
     display: flex;
 }
-.light{
+
+.light {
     font-family: Rubik light;
 }
-.photo-salle{
+
+.photo-salle {
     height: 45vh;
     margin: auto;
     display: flex;
 }
-.text-article{
+
+.text-article {
     font-size: 2.5vh;
 }
-.line{
+
+.line {
     height: 4px;
     width: 45px;
     background-color: #DDB90D;
@@ -114,22 +129,25 @@ a:hover{
     display: flex;
 }
 
-#menu-carte{
+#menu-carte {
     overflow: auto;
-    max-height: 100vh; 
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    max-height: 100vh;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 
 }
-#menu-carte::-webkit-scrollbar{
+
+#menu-carte::-webkit-scrollbar {
     display: none;
 }
 
-    /* #bas{
+/* #bas{
     height: 100vh;
     overflow-y: hidden; 
 } */
-.about-button{
+.about-button {
     background-color: #514ab4;
     width: 111px;
     height: 52px;
@@ -138,56 +156,66 @@ a:hover{
     font-size: 36px;
     text-align: center;
     vertical-align: center;
-    
-    border: 1px solid white ;
-    border: 5px solid #b44a4a ;
-    border-collapse: collapse; 
+
+    border: 1px solid white;
+    border: 5px solid #b44a4a;
+    border-collapse: collapse;
     transform: rotate(5deg);
 }
-.about-button:hover{
+
+.about-button:hover {
     transition-duration: 300ms;
     transform: rotate(0deg);
 }
-h1{
+
+h1 {
     font-family: 'Good Mood', Arial, Helvetica, sans-serif;
 }
-.menu-item{
+
+.menu-item {
     border: #9EDFFD 7px;
 }
-.accordion-item{
+
+.accordion-item {
     background: none;
-    border: none;   
+    border: none;
 }
-button.accordion-button{
+
+button.accordion-button {
     background: none;
     border: none;
     box-shadow: none;
 }
+
 /* .accordion{
     background: none;
 } */
-button.accordion-button h1{
+button.accordion-button h1 {
     margin-left: auto;
     margin-right: auto;
     color: #C6A610;
     font-size: 36px;
-    
+
 
 }
-.accordion-button::after{
-position: absolute;
-right: 10px; 
+
+.accordion-button::after {
+    position: absolute;
+    right: 10px;
 }
-.carousel-item.active{
+
+.carousel-item.active {
     border: 7px solid #9EDFFD;
     border-radius: 43px;
     max-width: 346px;
     max-height: 584px;
 }
-.carousel-item.active img{
+
+.carousel-item.active img {
     max-width: 240px;
     max-height: 195px;
 }
+
 /* 
 button.carousel-control-prev{
     visibility: hidden;
@@ -199,20 +227,22 @@ button.carousel-control-next{
 
 /* pour enlever la fleche quand le menu est fermé */
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     background: none;
 }
 
 /* la croix pour fermer le menu */
 
-button.accordion-button:not(.collapsed)::after{
-    background-image: url(img/close_white_36dp.svg);  
+button.accordion-button:not(.collapsed)::after {
+    background-image: url(img/close_white_36dp.svg);
 }
+
+button.accordion-button.collapsed::after {}
 
 /* le petit trait en dessous des menus accordéons */
 
-.separateur{
-    
+.separateur {
+
     width: 42px;
     border: 5px solid #514AB4;
     border-radius: 5px;
@@ -226,9 +256,9 @@ button.accordion-button:not(.collapsed)::after{
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  
-  
+}
+
+/*   
   .gallery {
     background: #EEE;
   }
@@ -242,13 +272,56 @@ button.accordion-button:not(.collapsed)::after{
   }
   
   /* cell number */
-  .gallery-cell:before {
+/* .gallery-cell:before {
     display: block;
     text-align: center;
     content: counter(gallery-cell);
     line-height: 200px;
     font-size: 80px;
     color: white;
-  }
-
-
+  } */
+.map-section iframe{
+    border-radius: 25px;
+}
+  .btn-inside{
+      margin-left: -150px;
+      margin-top: -50px;
+      border-radius: 50px;
+      color: #ffffff;
+      background-color: #5491f5;
+      font-weight: 400;
+}
+.form-section{
+    min-width: 380px;
+    max-width: 600px;
+    background-color: #DADCE0;
+    border-radius: 25px;
+    text-align: center;
+    min-height: 300px;
+    max-height: 500px;
+    }
+#form-name{
+    width: 85%;
+    margin-top: 50px;
+    font-size: 18px;
+}
+#form-mail{
+    width: 85%;
+    margin: 15px auto;
+    font-size: 18px;
+}
+#form-message{
+    width: 85%;
+    margin-bottom: 50px;
+    font-size: 18px;
+    height: 6em;
+}
+#form-btn{
+    margin-top: -50px;
+    
+    margin-left: 70%;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #5491f5;
+    font-weight: 400;
+}

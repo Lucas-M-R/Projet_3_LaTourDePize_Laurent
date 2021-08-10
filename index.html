@@ -14,6 +14,9 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>La tour de Pize</title>
 </head>
@@ -21,11 +24,6 @@
 
 
 <body>
-  <header>
-    <h6>Ouvert du mardi au samedi de 10h à 21h30<br>Dimanche de 18h à 21h30</h6>
-
-  </header>
-
   <div class="container">
     <div class="row align-items-start justify-content-center mx-auto">
       <div class="col-12">
@@ -62,7 +60,6 @@
     </div>
 
     <div class="row text-center">
-
       <div class="menu d-flex w-auto align-items-center">
         <div class="col-1"><a class="w-auto" href="#"><img class="icon" src="image/panier.svg"
               alt="Icon of bascket"></a>
@@ -457,7 +454,28 @@
 
 
 
-
+<div class="container row" id="contact">
+  <div class="map-section col-md-6">
+    <iframe width="384" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=5.452871918678284%2C47.06629258770576%2C5.456165671348572%2C47.068411855434455&amp;layer=mapnik&amp;marker=47.06735223210249%2C5.454518795013428" style="border: 1px solid black"></iframe>
+    <button type="button" class="btn btn-blue px-4 btn-inside" href="https://www.openstreetmap.org/?mlat=47.06735&amp;mlon=5.45452#map=18/47.06735/5.45452">
+      itinéraire
+      </a>
+    </button>
+  </div>
+  <div class="form-section">
+    <!-- <form method="POST" action="mailto:email@tourdepize.com">
+      <input type="text" size="10" maxlength="40" name="name" />
+      <input type="text" size="10" maxlength="40" name="name" />
+      <textarea rows="5" cols="20" wrap="physique" name="commentaires">Ecrivez un commentaire</textarea>
+    </form> -->
+    <form method="POST" action="mailto:email@tourdepize.com">
+      <input type="text" id="form-name" placeholder="Votre nom">
+      <input type="email" id="form-mail" placeholder="Votre mail">
+      <input type="text" id="form-message" placeholder="Votre message">
+      <input type="button" id="form-btn" value="Submit" class="btn btn-blue px-4">
+    </form>
+  </div>
+</div>
 
 
 
