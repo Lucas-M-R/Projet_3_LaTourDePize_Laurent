@@ -1,24 +1,130 @@
-*{
+/* *{
     background-color: #262626;
     color: #ffffff;
-}
+} */
+
+
+
+
 body{
     background-image: url(img/BG-image.svg);
     background-size: 100% ;
     background-repeat: no-repeat;
-}
+    
 
 /* empêcher le scroll de la page */
-
-/* body{
-    overflow-y: hidden;
+    /* overflow-y: hidden;
     width: 100%;
-    height: 100vh;
-} */
-/* .menu-carte{
-    overflow-y: scroll;
-    max-height: 100vh;
-} */
+    height: 100vh; */
+
+    font-family: Rubik;
+    color: white;
+    background-color: #262626;
+    font-size: 1.5vh;
+
+
+}
+
+.center{
+    display: block;
+    margin: auto;
+}
+.logo{
+    height: 25vh;
+    width: 25vh;
+    margin-top: 5vh;
+}
+
+p{
+    /* font-size: 2.5vh; */
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 0vh;
+}
+.button{
+    height: 7.5vh;
+    width: 20vh;
+    border: none;
+    outline: 1px white solid;
+    outline-offset: -1vh;
+    transform: rotate(4deg);
+    color: white;
+    font-family: Good Mood;
+    font-size: 4vh;
+    margin: auto;
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.btn-blue{
+    background-color: #514ab4;
+    text-align: center;
+}
+.btn-yellow{
+    background-color: #DDB90D;
+    text-align: center;
+}
+.btn-orange{
+    background-color: #BC3718;
+    text-align: center;
+}
+@font-face {
+    font-family: Good Mood;
+    src: url(font/good_mood/Good\ Mood.ttf);
+}
+.icon{
+    height: 4.3vh;
+    width: 4.3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+a:hover{
+    color: white;
+}
+.logos-group{
+    margin:auto;
+    display: flex;
+    margin-top: 2vh;
+}
+.menu{
+    margin:auto;
+    display: flex;
+}
+.light{
+    font-family: Rubik light;
+}
+.photo-salle{
+    height: 45vh;
+    margin: auto;
+    display: flex;
+}
+.text-article{
+    font-size: 2.5vh;
+}
+.line{
+    height: 4px;
+    width: 45px;
+    background-color: #DDB90D;
+    margin: auto;
+    margin-top: 3vh;
+    display: flex;
+}
+
+#menu-carte{
+    overflow: auto;
+    max-height: 100vh; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+#menu-carte::-webkit-scrollbar{
+    display: none;
+}
+
     /* #bas{
     height: 100vh;
     overflow-y: hidden; 
@@ -144,3 +250,5 @@ button.accordion-button:not(.collapsed)::after{
     font-size: 80px;
     color: white;
   }
+
+

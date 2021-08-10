@@ -1,0 +1,151 @@
+.center{
+    display: block;
+    margin: auto;
+}
+.logo{
+    height: 25vh;
+    width: 25vh;
+    margin-top: 5vh;
+}
+body{
+    font-family: Rubik;
+    color: white;
+    background-color: #262626;
+    font-size: 1.5vh;
+}
+p{
+    /* font-size: 2.5vh; */
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 0vh;
+}
+.button{
+    height: 7.5vh;
+    width: 20vh;
+    border: none;
+    outline: 1px white solid;
+    outline-offset: -1vh;
+    transform: rotate(4deg);
+    color: white;
+    font-family: Good Mood;
+    font-size: 4vh;
+    margin: auto;
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.btn-blue{
+    background-color: #514ab4;
+}
+.btn-yellow{
+    background-color: #DDB90D;
+}
+.btn-orange{
+    background-color: #BC3718;
+}
+@font-face {
+    font-family: Good Mood;
+    src: url(font/good_mood/Good\ Mood.ttf);
+}
+.icon{
+    height: 4.3vh;
+    width: 4.3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+a:hover{
+    color: white;
+}
+.logos-group{
+    margin:auto;
+    display: flex;
+    margin-top: 2vh;
+}
+.menu{
+    margin:auto;
+    display: flex;
+}
+.light{
+    font-family: Rubik light;
+}
+.photo-salle{
+    height: 45vh;
+    margin: auto;
+    display: flex;
+}
+.text-article{
+    font-size: 2.5vh;
+}
+.line{
+    height: 4px;
+    width: 45px;
+    background-color: #DDB90D;
+    margin: auto;
+    margin-top: 3vh;
+    display: flex;
+}
+/* #background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width:90%;
+    height: 100%;
+    border: solid rgb(71, 71, 88);
+    border-width: 10px 0px 400px 500px;
+    border-bottom-color: rgb(41, 88, 116);
+} */
+/* html { overflow-y: hidden; } */
+.test{
+    color: #262626;
+}
+.accordeon-header{
+    color: #DDB90D;
+    font-family: Good Mood;
+}
+.accordeon{
+    text-decoration: none;
+    ;
+}
+h2{
+    background-color: none;
+    color: none;
+}
+.accordeon-item{
+
+}
+.accordeon-button{
+    color: #DDB90D;
+    background-color:#262626;
+    border: none;
+}
+
+.photo-carousel{
+    height: 25vh;
+}
+.cadre-carousel{
+    width: 324px;
+    height: 65vh;
+    border: solid #9edffd 7px;
+    border-radius: 30px;
+    margin: auto;
+}
+.prix{
+    color: #DDB90D;
+    font-size: 3vh;
+}
+.description{
+    color: #f3d4a9;
+    width: 28vh;
+}
+.product-name{
+    color: #f3d4a9;
+}
+.center{
+    display: flex;
+    margin: auto;
+}
