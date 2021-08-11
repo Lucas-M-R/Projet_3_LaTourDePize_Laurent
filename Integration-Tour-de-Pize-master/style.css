@@ -1,24 +1,60 @@
-.center{
-    display: block;
-    margin: auto;
-}
-.logo{
-    height: 25vh;
-    width: 25vh;
-    margin-top: 5vh;
-}
+/* Eléments courrants */
 body{
     font-family: Rubik;
     color: white;
     background-color: #262626;
     font-size: 1.5vh;
+    max-width: 1440px;
 }
 p{
-    /* font-size: 2.5vh; */
     margin-bottom: 1vh;
     margin-top: 1vh;
     padding: 0vh;
 }
+a{
+    text-decoration: none;
+    color: none;
+}
+a:hover{
+    color: white;
+}
+
+/* Section */
+#a-propos{
+    height: 100vh;
+}
+#home{
+    height: 100vh;
+}
+#menu{
+    z-index:120000;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+/* Eléments spécifiques */
+.logo{
+    height: 25vh;
+    width: 25vh;
+}
+.logo-mini{
+    height: 14vh;
+}
+.icon{
+    height: 4.3vh;
+    width: 4.3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+.logos-group{
+    margin:auto;
+    display: flex;
+    margin-top: 2vh;
+}
+
+
+
+/* Boutton classique (comme dans le home) */
 .button{
     height: 7.5vh;
     width: 20vh;
@@ -31,8 +67,24 @@ p{
     font-size: 4vh;
     margin: auto;
     display: block;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+/* Boutton redressé avec shadow */
+.button-mobile{
+    height: 7.5vh;
+    width: 17vh;
+    border: none;
+    outline: 1px white solid;
+    outline-offset: -1vh;
+    color: white;
+    font-family: Good Mood;
+    font-size: 4vh;
+    margin: auto;
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    box-shadow: rgba(0, 0, 0, 70%) 3px 3px 3px;
 }
 .btn-blue{
     background-color: #514ab4;
@@ -43,32 +95,47 @@ p{
 .btn-orange{
     background-color: #BC3718;
 }
-@font-face {
+
+/* Boutton couleur inversé */
+.button-dark{
+    height: 7.5vh;
+    width: 17vh;
+    border: none;
     font-family: Good Mood;
-    src: url(font/good_mood/Good\ Mood.ttf);
+    font-size: 4vh;
+    margin: none;
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    transform: rotate(4deg);
 }
-.icon{
-    height: 4.3vh;
-    width: 4.3vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
+.dark-red{
+    outline: 1px solid #bc3718;
+    outline-offset: -1vh;
+    color: #bc3718;
+    background-color: #3c3c3c;
 }
-a{
-    text-decoration: none;
-    color: none;
+.dark-yellow{
+    outline: 1px solid #ddb90d;
+    outline-offset: -1vh;
+    color: #ddb90d;
+    background-color: #3c3c3c;
 }
-a:hover{
+.dark-blue{
+    outline: 1px solid #746aff;
+    outline-offset: -1vh;
+    color: #746aff;
+    background-color: #3c3c3c;
+}
+
+
+.mon-panier{
     color: white;
+    font-family: Good Mood;
+    font-size: 3vh;
 }
-.logos-group{
-    margin:auto;
-    display: flex;
-    margin-top: 2vh;
-}
-.menu{
-    margin:auto;
-    display: flex;
-}
+
+/* Dans à propos */
 .light{
     font-family: Rubik light;
 }
@@ -78,7 +145,7 @@ a:hover{
     display: flex;
 }
 .text-article{
-    font-size: 2.5vh;
+    font-size: 2.3vh;
 }
 .line{
     height: 4px;
@@ -88,42 +155,25 @@ a:hover{
     margin-top: 3vh;
     display: flex;
 }
-/* #background {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 10%;
-    width:90%;
-    height: 100%;
-    border: solid rgb(71, 71, 88);
-    border-width: 10px 0px 400px 500px;
-    border-bottom-color: rgb(41, 88, 116);
-} */
-/* html { overflow-y: hidden; } */
-.test{
-    color: #262626;
-}
-.accordeon-header{
-    color: #DDB90D;
-    font-family: Good Mood;
-}
-.accordeon{
-    text-decoration: none;
-    ;
-}
-h2{
-    background-color: none;
-    color: none;
-}
-.accordeon-item{
 
+
+.center{
+    display: flex;
+    margin: auto;
 }
+
+
+@font-face {
+    font-family: Good Mood;
+    src: url(font/good_mood/Good\ Mood.ttf);
+}
+
+/* Normalement inutile (tout ce qui est dans l'accordéon)*/
 .accordeon-button{
     color: #DDB90D;
     background-color:#262626;
     border: none;
 }
-
 .photo-carousel{
     height: 25vh;
 }
@@ -142,10 +192,18 @@ h2{
     color: #f3d4a9;
     width: 28vh;
 }
+.accordeon-header{
+    color: #DDB90D;
+    font-family: Good Mood;
+}
+.accordeon{
+    text-decoration: none;
+    ;
+}
+h2{
+    background-color: none;
+    color: none;
+}
 .product-name{
     color: #f3d4a9;
-}
-.center{
-    display: flex;
-    margin: auto;
 }

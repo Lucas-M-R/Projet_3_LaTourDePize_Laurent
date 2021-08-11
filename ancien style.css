@@ -1,7 +1,3 @@
-/*version de lucas */
-
-
-
 @font-face {
     font-family: Good Mood;
     src: url(font/good_mood/Good\ Mood.ttf);
@@ -10,6 +6,8 @@
  
  
  /* *{
+    background-color: #262626;
+    color: #ffffff;
     border: 1px solid red;
 }  */
 
@@ -29,60 +27,34 @@
      color: white;
      background-color: #262626;
      font-size: 1.5vh;
-     max-width: 1440px;
-     margin: auto;
     
  }
+
+ .center {
+     display: block;
+     margin: auto;
+ }
+
+ .logo {
+     height: 25vh;
+     width: 25vh;
+     margin-top: 5vh;
+ }
+
  p {
-    /* font-size: 2.5vh; */
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    padding: 0vh;
-}
-a{
-    text-decoration: none;
-    color: none;
-}
-a:hover{
-    color: white;
-}
+     /* font-size: 2.5vh; */
+     margin-bottom: 1vh;
+     margin-top: 1vh;
+     padding: 0vh;
+ }
 
-/* Section */
-#a-propos{
-    height: 100vh;
-}
-#home{
-    height: 100vh;
-}
-#menu{
-    z-index:120000;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-}
+ .menu-principal {
+     width: 100%;
+     height: 100vh;
+     z-index: 1000;
+     /* margin-bottom: 550px; */
+ }
 
-/* Eléments spécifiques */
-.logo{
-    height: 25vh;
-    width: 25vh;
-}
-.logo-mini{
-    height: 14vh;
-}
-.icon{
-    height: 4.3vh;
-    width: 4.3vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
-}
-.logos-group{
-    margin:auto;
-    display: flex;
-    margin-top: 2vh;
-}
-
-
-
-/* Boutton classique (comme dans le home) */
  .button {
      height: 7.5vh;
      width: 20vh;
@@ -95,97 +67,74 @@ a:hover{
      font-size: 4vh;
      margin: auto;
      display: block;
-     margin-top: 2vh;
-     margin-bottom: 2vh;
+     margin-top: 3vh;
+     margin-bottom: 3vh;
  }
-/* Boutton redressé avec shadow */
-.button-mobile{
-    height: 7.5vh;
-    width: 17vh;
-    border: none;
-    outline: 1px white solid;
-    outline-offset: -1vh;
-    color: white;
-    font-family: Good Mood;
-    font-size: 4vh;
-    margin: auto;
-    display: block;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    box-shadow: rgba(0, 0, 0, 70%) 3px 3px 3px;
-}
-.btn-blue{
-    background-color: #514ab4;
-}
-.btn-yellow{
-    background-color: #DDB90D;
-}
-.btn-orange{
-    background-color: #BC3718;
-}
 
-/* Boutton couleur inversé */
-.button-dark{
-    height: 7.5vh;
-    width: 17vh;
-    border: none;
-    font-family: Good Mood;
-    font-size: 4vh;
-    margin: none;
-    display: block;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    transform: rotate(4deg);
-}
-.dark-red{
-    outline: 1px solid #bc3718;
-    outline-offset: -1vh;
-    color: #bc3718;
-    background-color: #3c3c3c;
-}
-.dark-yellow{
-    outline: 1px solid #ddb90d;
-    outline-offset: -1vh;
-    color: #ddb90d;
-    background-color: #3c3c3c;
-}
-.dark-blue{
-    outline: 1px solid #746aff;
-    outline-offset: -1vh;
-    color: #746aff;
-    background-color: #3c3c3c;
-}
+ .btn-blue {
+     background-color: #514ab4;
+     text-align: center;
+ }
 
-.mon-panier{
-    color: white;
-    font-family: Good Mood;
-    font-size: 3vh;
-}
-/* Dans à propos */
-.light{
-    font-family: Rubik light;
-}
-.photo-salle{
-    height: 45vh;
-    margin: auto;
-    display: flex;
-    max-width: fit-content;
-}
-.text-article{
-    font-size: 2.3vh;
-}
-.line{
-    height: 4px;
-    width: 45px;
-    background-color: #DDB90D;
-    margin: auto;
-    margin-top: 3vh;
-    display: flex;
-}
-.center{
-    display: flex;
-    margin: auto;
-}
+ .btn-yellow {
+     background-color: #DDB90D;
+     text-align: center;
+ }
+
+ .btn-orange {
+     background-color: #BC3718;
+     text-align: center;
+ }
+
+ .icon {
+     height: 4.3vh;
+     width: 4.3vh;
+     margin-left: 2vh;
+     margin-right: 2vh;
+ }
+
+ a {
+     text-decoration: none;
+     color: none;
+ }
+
+ a:hover {
+     color: white;
+ }
+
+ .logos-group {
+     margin: auto;
+     display: flex;
+     margin-top: 2vh;
+ }
+
+ .menu {
+     margin: auto;
+     display: flex;
+ }
+
+ .light {
+     font-family: Rubik light;
+ }
+
+ .photo-salle {
+     height: 45vh;
+     margin: auto;
+     display: flex;
+ }
+
+ .text-article {
+     font-size: 2.5vh;
+ }
+
+ .line {
+     height: 4px;
+     width: 45px;
+     background-color: #DDB90D;
+     margin: auto;
+     margin-top: 3vh;
+     display: flex;
+ }
 
  #menu-carte {
      overflow: auto;
@@ -264,7 +213,6 @@ a:hover{
      border-radius: 43px;
      max-width: 346px;
      max-height: 584px;
-     
  }
 
  .burger-menu.active img {
@@ -355,17 +303,4 @@ button.carousel-control-next{
      color: #ffffff;
      background-color: #5491f5;
      font-weight: 400;
- }
-
- @media screen and (min-width: 1024px)
- {
-     #home{
-         display: none;
-     }
-
- }
- @media  screen and (max-width: 1024) {
-    .frise-menu-desktop{
-        /* background: url(img/frise.png); */
-        max-width: 750px;
  }
