@@ -5,116 +5,154 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
   <title>La tour de Pize</title>
 </head>
-
+<!-- Menu nav -->
+<div id="menu" class="fixed-top d-md-none collapse">
+  <div class="row align-items-start justify-content-center mx-auto">
+      <div class="col-12 m-3">
+          <a data-bs-toggle="collapse" href="#menu"><img class="center logo" src="img/logo.png" alt="logo la tour de pize"></a>
+      </div>
+  </div>
+  <!-- Trois bouttons -->
+  <div class="row p-0 m-0 text-center">
+      <div class="col-12 p-0 m-0">
+          <a type="button" class="button btn-blue" href="#a-propos"> À PROPOS</button>
+      </div>
+      <div class="clo-12 p-0 m-0">
+          <a type="button" class="button btn-orange"> LA CARTE</a>
+      </div>
+      <div class="col-12">
+          <a  type="button" class="button btn-yellow"> CONTACT</a>
+      </div>
+  </div>
+  <!-- Fin Trois bouttons -->
+  <!-- Icons -->
+  <div class="row text-center">
+      <div class="logos-group d-flex w-auto">
+          <a class="w-auto" href="#"><img class="icon" src="img/facebook.svg" alt="Icon of facebook"></a>
+          <a  class="w-auto mx-3" href="#"><img class="icon" src="img/phone_white_24dp.svg" alt="Icon of phone"></a>
+          <a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
+      </div>
+  </div>
+  <!-- Fin Icons -->
+  <div class="row">
+      <div class="col-12">
+          <p class="text-center">
+              La tour de Pize <br> <span class="light">1 rue du Fourney 39100 Choisey</span>
+          </p>
+      </div>
+  </div>
+</div>
+<!-- Fin menu nav -->
 
 
 <body>
+  <header>
   <div class="container">
 
-
-    <!-- carousel de fond à implanter peut-être -->
-
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="img/img-top1.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/img-top2.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/img-top3.png" alt="Third slide">
-        </div>
+      <!-- Home -->
+      <div id="home">
+          <div class="row align-items-start justify-content-center mx-auto">
+              <div class="col-12 m-3">
+                  <a data-bs-toggle="collapse" href="#menu"><img class="center logo" src="img/logo.png" alt="logo la tour de pize"></a>
+                  <p class="text-center p-1">
+                      Ouvert du mardi au samedi <br> de 10h à 21h30 <br> Dimanche de 18h à 21h30
+                  </p>
+              </div>
+          </div>
+          <!-- Les trois bouttons -->
+          <div class="row p-0 m-0 text-center">
+              <div class="col-12 p-0 m-0">
+                  <a type="button" class="button btn-blue" href="#a-propos"> À PROPOS</a>
+              </div>
+              <div class="clo-12 p-0 m-0">
+                  <a type="button" class="button btn-orange"> LA CARTE</a>
+              </div>
+              <div class="col-12">
+                  <a type="button" class="button btn-yellow"> CONTACT</a>
+              </div>
+          </div>
+          <!-- Fin des trois bouttons -->
+          <!-- Icons -->
+          <div class="row text-center">
+              <div class="logos-group d-flex w-auto">
+                  <a class="w-auto" href="#"><img class="icon" src="img/facebook.svg" alt="Icon of facebook"></a>
+                  <a class="w-auto mx-3" href="#"><img class="icon" src="img/phone_white_24dp.svg" alt="Icon of phone"></a>
+                  <a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <!-- Icons -->
+          <div class="row">
+              <div class="col-12">
+                  <p class="text-center">
+                      La tour de Pize <br> <span class="light">1 rue du Fourney 39100 Choisey</span>
+                  </p>
+              </div>
+          </div>
       </div>
-    </div> -->
+      <!-- Fin home -->
+      <!-- Section à propos -->
+      <div id="a-propos">
+          <!-- Bandeau navigation mobile -->
+          <div id="testeur" class="sticky-top d-md-none">
+              <div class="row justify-content-between align-items-center">
+                  <div class="col-3 text-start"><a class="w-auto burger" data-bs-toggle="collapse" href="#menu"><img class="icon" src="img/menu-burger_icon.svg" alt="Icon of bascket"></a></div>
+                  <div class="col-6 text-center"><a class="button-mobile btn-blue" href="#a-propos"> À PROPOS</a></div>
+                  <div class="col-3 text-end"><a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
+              </div>
+          </div>
+          <!-- Fin Bandeau navigation mobile -->
+          <!-- Bandeau navigation desktop -->
+          <div class="row align-items-center d-none d-md-flex m-2">
+              <div class="col">
+                  <img class = "logo-mini" src="img/logo.png" alt="Restaurant's logo">
+              </div>
+              <div class="col">
+                  <div class="text-center" ><a class="button-mobile btn-blue" href="#a-propos"> À PROPOS</a></div>
+              </div>
+              <div class="col">
+                  <div class="text-center" ><a class="button-dark dark-red" href="#la-carte"> LA CARTE</a></div>
+              </div>
+              <div class="col">
+                  <div class="text-center" ><a class="button-dark dark-yellow" href="#contact"> CONTACT</a></div>
+              </div>
+              <div class="col text-end"><a class="w-auto" href="#"><span class="d-none d-md-inline mon-panier">MON PANIER</span><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
+          </div>
+          <!-- Bandeau navigation desktop -->
 
-    <!-- fin carousel de fond -->
-
-
-    <!-- menu principal -->
-
-
-    <div class="menu-principal">
-      <div class="row align-items-start justify-content-center mx-auto">
-        <div class="col-12">
-          <img class="center logo" src="img/logo.png" alt="logo la tour de pize">
-          <p class="text-center p-1">
-            Ouvert du mardi au samedi <br> de 10h à 21h30 <br> Dimanche de 18h à 21h30
-          </p>
-        </div>
-
+          <!-- Article à propos -->
+          <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                  <p class="text-article m-3">
+                      Nous sommes un restaurant rapide situé sur la zone commerciale de Choisey, nous avons une salle intérieur, une terrasse et une aire de jeux enfants. <br> Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pain kebab. Tous nos desserts sont réalisés par nos soins.
+                  </p>
+              </div>
+              <div class="col-12 col-md-6">
+                  <img class="photo-salle" src="img/salle.png" alt="Photo de la salle du restaurant">
+              </div>
+          </div>
+          <div class="line"></div>
+          <div class="row m-4">
+              <div class="col-12">
+                  <p class="text-center">
+                      La tour de Pize <br> <span class="light">1 rue du Fourney 39100 Choisey <br> 03 84 42 77 25</span>
+                  </p>
+              </div>
+          </div>
+          <!-- Fin Article à propos -->
       </div>
-      <div class="row boutons-menu ">
-        <div class="col-12">
-          <a type="button" class="button btn-blue" href="#a-propos">À PROPOS</a>
-        </div>
-        <div class="clo-12 ">
-          <a type="button" class="button btn-orange">LA CARTE</a>
-        </div>
-        <div class="col-12">
-          <a type="button" class="button btn-yellow">CONTACT</a>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="logos-group d-flex w-auto">
-          <a class="w-auto" href="#"><img class="icon" src="img/facebook.svg" alt="Icon of facebook"></a>
-          <a class="w-auto mx-3" href="#"><img class="icon" src="img/phone_white_24dp.svg" alt="Icon of phone"></a>
-          <a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p class="text-center">
-            La tour de Pize <br> <span class="light">1 rue du Fourney 39100 Choisey</span>
-          </p>
-
-        </div>
-      </div>
+      <!-- Fin section À propos -->
 
 
-    </div>
 
-    <!-- fin menu principal -->
-
-
-  </div>
-  <div class="row text-center">
-    <div class="menu d-flex w-auto align-items-center">
-      <div class="col-1"><a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
-      </div>
-      <div class="mx-3" id="a-propos"><a type="button" class="button btn-blue" href="#a-propos"> À PROPOS</a></div>
-      <div class="d-none d-md-block mx-3"><a type="button" class="button btn-orange"> LA CARTE</a></div>
-      <div class="d-none d-md-block mx-3"><a type="button" class="button btn-yellow"> CONTACT</a></div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6">
-        <p class="text-article m-3">
-          Nous sommes un restaurant rapide situé sur la zone commerciale de Choisey, nous avons une salle intérieur, une
-          terrasse et une aire de jeux enfants. <br> Nous vous proposons des pizzas, des burgers, des tacos, des paninis
-          et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pain kebab. Tous nos desserts
-          sont réalisés par nos soins.
-        </p>
-      </div>
-      <div class="col-12 col-md-6 ">
-        <img class="photo-salle img-fluid h-auto" src="img/salle.png" alt="Photo de la salle du restaurant">
-      </div>
-    </div>
-    <div class="line"></div>
-    <div class="row m-4">
-      <div class="col-12">
-        <p class="text-center">
-          La tour de Pize <br> <span class="light">1 rue du Fourney 39100 Choisey <br> 03 84 42 77 25</span>
-        </p>
-      </div>
 
 
 
