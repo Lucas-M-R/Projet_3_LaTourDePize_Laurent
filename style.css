@@ -30,6 +30,7 @@
      background-color: #262626;
      font-size: 1.5vh;
      max-width: 1440px;
+     margin: auto;
     
  }
  p {
@@ -168,6 +169,7 @@ a:hover{
     height: 45vh;
     margin: auto;
     display: flex;
+    max-width: fit-content;
 }
 .text-article{
     font-size: 2.3vh;
@@ -262,6 +264,7 @@ a:hover{
      border-radius: 43px;
      max-width: 346px;
      max-height: 584px;
+     
  }
 
  .burger-menu.active img {
@@ -352,4 +355,11 @@ button.carousel-control-next{
      color: #ffffff;
      background-color: #5491f5;
      font-weight: 400;
+ }
+
+ @media screen and (min-width: 1024px)
+ {
+     #home{
+         display: none;
+     }
  }
