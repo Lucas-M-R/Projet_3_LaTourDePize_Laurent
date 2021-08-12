@@ -6,24 +6,23 @@
     font-family: Good Mood;
     src: url(font/good_mood/Good\ Mood.ttf);
 }
+ html{
+    max-width: 1440px;
+    margin: auto;
+ }
  
- 
- 
- /* *{
-    border: 1px solid red;
-}  */
-
-
  body {
      background-image: url(img/BG-image.svg);
      background-size: 100%;
      background-repeat: no-repeat;
 
 
+
      /* empêcher le scroll de la page */
      /* overflow-y: hidden;
-    width: 100%;
-    height: 100vh; */
+     overflow-x: hidden; */
+    /* width: 100%; */
+    height: 100vh;
 
      font-family: 'Rubik', sans-serif;
      color: white;
@@ -97,6 +96,7 @@ a:hover{
      display: block;
      margin-top: 2vh;
      margin-bottom: 2vh;
+     padding-top: 6px;
  }
 /* Boutton redressé avec shadow */
 .button-mobile{
@@ -113,6 +113,8 @@ a:hover{
     margin-top: 2vh;
     margin-bottom: 2vh;
     box-shadow: rgba(0, 0, 0, 70%) 3px 3px 3px;
+    padding-top: 6px;
+
 }
 .btn-blue{
     background-color: #514ab4;
@@ -136,6 +138,8 @@ a:hover{
     margin-top: 1vh;
     margin-bottom: 1vh;
     transform: rotate(4deg);
+    padding-top: 6px;
+
 }
 .dark-red{
     outline: 1px solid #bc3718;
@@ -199,7 +203,7 @@ a:hover{
     box-shadow: black 3px 3px 3px;
 }
 #panier{
-    width: 100wh;
+    width: 100vw;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     z-index: 100000;
@@ -317,20 +321,7 @@ a:hover{
     height: 100vh;
     overflow-y: hidden; 
 } */
- .about-button {
-     background-color: #514ab4;
-     width: 111px;
-     height: 52px;
-     font-family: 'Good Mood', Arial, Helvetica, sans-serif;
-     color: white;
-     font-size: 36px;
-     text-align: center;
-     vertical-align: center;
-     border: 1px solid white;
-     border: 5px solid #b44a4a;
-     border-collapse: collapse;
-     transform: rotate(5deg);
- }
+
 
  .about-button:hover {
      transition-duration: 300ms;
@@ -461,14 +452,12 @@ button.carousel-control-next{
 
  #form-btn {
      margin-top: -50px;
-
      margin-left: 70%;
      border-radius: 50px;
      color: #ffffff;
      background-color: #5491f5;
      font-weight: 400;
  }
-
  .facebook img{
     width: 50px;
     height: 50px;
@@ -481,21 +470,50 @@ button.carousel-control-next{
  .facebook, .adress{
      text-align: center;
  }
-
+#contact{
+    height: 100vh;
+}
 
  @media screen and (min-width: 1024px)
  {
-     #home{
+     /* #home{
          display: none;
-     }
-
- }
+     } */
+     /* .button-mobile{
+         margin: auto;
+     } */
+     .carousel-item {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+        margin-right: -0;
+        backface-visibility: hidden;
+        transition: inherit;margin-right: 20px;
+    }
+    .carousel-item img{
+        margin: 10px 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    
+      
+      .accordion-collapse{
+          position: absolute;
+          background:#262626;
+          z-index: 1;
+          width: 100vw;
+          left: 0;
+      }
+    }
  @media  screen and (max-width: 1024) {
     .frise-menu-desktop{
         /* background: url(img/frise.png); */
+        display: flex;
         max-width: 750px;
-        height: auto;
+        height: 511;
         margin-bottom: 100px;
+
     }
     #collapseThree{
         width: 90vW;
@@ -506,6 +524,7 @@ button.carousel-control-next{
     .carousel-item{
         display: block;
     }
+
  }
  
   /*Animation home Yamina*/
@@ -517,13 +536,15 @@ button.carousel-control-next{
 
 #bg-header {
 position : absolute;
-top :20%;
+top :%;
 left:0;
 width: 100%;
-height: 80%;
+height: 100%;
 background: no-repeat url("img/bg-header.png") -500px;
 animation: defile 10s alternate infinite;
-opacity: 0.6;
-filter:alpha(opacity=60);
-z-index: -1
+opacity: 0.5;
+filter:alpha(opacity=0.2);
+z-index: -2;
 }
+
+
