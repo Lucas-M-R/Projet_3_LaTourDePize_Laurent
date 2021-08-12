@@ -14,6 +14,133 @@
 
   <title>La tour de Pize</title>
 </head>
+
+<body>
+  <!-- Le panier -->
+
+<div class="collapse sticky-top" id="panier">
+  <div class="row p-0 m-0 align-items-center">
+      <div class="col-6 my-5 mx-4">
+          <a class="w-auto" href="#"><span class="mon-panier-panier">MON PANIER</span><img class="icon-big"
+                  src="img/panier.svg" alt="Icon of bascket"></a>
+      </div>
+      <div class="col-4 text-end">
+          <a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+              aria-controls="#panier"><img class="icon-big" src="img/close_white_24dp.svg"
+                  alt="Icon of bascket"></a>
+      </div>
+  </div>
+  <div class="row align-items-md-center">
+      <div class="col-12 col-md-6">
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+          <div class="row justify-content-between align-items-center text-center choix-x mx-4">
+              <div class="col-6 text-choix">
+                  Burger Bacon
+              </div>
+              <div class="col-3 prix-choix">
+                  9.54 €
+              </div>
+              <div class="col-3">
+                  <a class="w-auto" href="#"><img class="icon" src="img/close_white_24dp.svg"
+                          alt="Icon of bascket"></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 mx-5 mx-md-0">
+          <div class="row ligne-prix">
+              <div class="col-6">
+                  <div class="btn-panier">
+                      <a class="icon-panier" data-bs-toggle="collapse" href="#panier" role="button"
+                          aria-expanded="false" aria-controls="#panier">
+                          <img class="icon-panier" src="img/panier.svg" alt="Logo-panier">
+                          <div class="nombre-panier"><span class="valeur-nb-panier-2">7</span></div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-6 cadre-prix text-center">
+                  <span> 19.55 €</span>
+              </div>
+          </div>
+          <div class="row align-items-start">
+              <div class="col-12 btn-commander">
+                  COMMANDER
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Fin le panier -->
 <!-- Menu nav -->
 <div id="menu" class="fixed-top d-md-none collapse">
   <div class="row align-items-start justify-content-center mx-auto">
@@ -39,7 +166,8 @@
       <div class="logos-group d-flex w-auto">
           <a class="w-auto" href="#"><img class="icon" src="img/facebook.svg" alt="Icon of facebook"></a>
           <a  class="w-auto mx-3" href="#"><img class="icon" src="img/phone_white_24dp.svg" alt="Icon of phone"></a>
-          <a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
+          <a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+          aria-controls="#panier"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
       </div>
   </div>
   <!-- Fin Icons -->
@@ -54,12 +182,14 @@
 <!-- Fin menu nav -->
 
 
-<body>
   <header>
   <div class="container">
 
       <!-- Home -->
       <div id="home">
+                <!--Animation page d'accueil-->
+                <div id="bg-header"></div>
+
           <div class="row align-items-start justify-content-center mx-auto">
               <div class="col-12 m-3">
                   <a data-bs-toggle="collapse" href="#menu"><img class="center logo" src="img/logo.png" alt="logo la tour de pize"></a>
@@ -84,9 +214,10 @@
           <!-- Icons -->
           <div class="row text-center">
               <div class="logos-group d-flex w-auto">
-                  <a class="w-auto" href="#"><img class="icon" src="img/facebook.svg" alt="Icon of facebook"></a>
-                  <a class="w-auto mx-3" href="#"><img class="icon" src="img/phone_white_24dp.svg" alt="Icon of phone"></a>
-                  <a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a>
+                  <a class="w-auto" href="#"><img class="facebook icon" src="img/facebook.svg" alt="Icon of facebook"></a>
+                  <a class="w-auto mx-3" href="#"><img class="phone icon" src="img/phone_white_24dp.svg" alt="Icon of phone"></a>
+                  <a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+                  aria-controls="#panier"><img class="basket icon" src="img/panier.svg" alt="Icon of bascket"></a>
               </div>
           </div>
           <!-- Icons -->
@@ -98,6 +229,7 @@
               </div>
           </div>
       </div>
+    </header>
       <!-- Fin home -->
       <!-- Section à propos -->
       <div id="a-propos">
@@ -106,7 +238,8 @@
               <div class="row justify-content-between align-items-center">
                   <div class="col-3 text-start"><a class="w-auto burger" data-bs-toggle="collapse" href="#menu"><img class="icon" src="img/menu-burger_icon.svg" alt="Icon of bascket"></a></div>
                   <div class="col-6 text-center"><a class="button-mobile btn-blue" href="#a-propos"> À PROPOS</a></div>
-                  <div class="col-3 text-end"><a class="w-auto" href="#"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
+                  <div class="col-3 text-end"><a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+                    aria-controls="#panier"><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
               </div>
           </div>
           <!-- Fin Bandeau navigation mobile -->
@@ -124,7 +257,8 @@
               <div class="col">
                   <div class="text-center" ><a class="button-dark dark-yellow" href="#contact"> CONTACT</a></div>
               </div>
-              <div class="col text-end"><a class="w-auto" href="#"><span class="d-none d-md-inline mon-panier">MON PANIER</span><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
+              <div class="col text-end"><a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+                aria-controls="#panier"><span class="d-none d-md-inline mon-panier">MON PANIER</span><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
           </div>
           <!-- Bandeau navigation desktop -->
 
@@ -161,7 +295,41 @@
      
       
       
-      <div class="container-fluid text-center" id="menu-accordeon">        
+      <div class="container-fluid text-center" id="menu-accordeon"> 
+
+<!-- Bandeau navigation mobile -->
+<div class="sticky-top d-md-none">
+  <div class="row justify-content-between align-items-center">
+    <div class="col-3 text-start"><a class="w-auto burger" data-bs-toggle="collapse" href="#menu"><img
+          class="icon" src="img/menu-burger_icon.svg" alt="Icon of bascket"></a></div>
+    <div class="col-6 text-center"><a class="button-mobile btn-orange" href="#menu-accordeon"> LA CARTE</a></div>
+    <div class="col-3 text-end"><a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+      aria-controls="#panier"><img class="icon" src="img/panier.svg"
+          alt="Icon of bascket"></a></div>
+  </div>
+</div>
+<!-- Bandeau navigation desktop -->
+<div class="row align-items-center d-none d-md-flex m-2">
+  <div class="col">
+    <img class="logo-mini" src="img/logo.png" alt="Restaurant's logo">
+  </div>
+  <div class="col">
+    <div class="text-center"><a class="button-dark dark-blue" href="#a-propos"> À PROPOS</a></div>
+  </div>
+  <div class="col">
+    <div class="text-center"><a class="button-mobile btn-orange" href="#la-carte"> LA CARTE</a></div>
+  </div>
+  <div class="col">
+    <div class="text-center"><a class="button-dark dark-yellow" href="#contact"> CONTACT</a></div>
+  </div>
+  <div class="col text-end"><a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+    aria-controls="#panier"><span class="d-none d-md-inline mon-panier">MON
+        PANIER</span><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
+</div>
+<!-- Bandeau navigation desktop -->
+
+
+
         <div class="row">
  <!--Menu accordéon-->
         <div class="accordion col-lg-6" id="menu-carte">
@@ -235,6 +403,22 @@
                   </button>
                 </div>
                 <!--fin du carousel-->
+
+                <div class="row align-items-top p-0 m-0">
+                  <div class="col-4">
+                      <div class="btn-panier position-relative ms-5">
+                          <a class="icon-panier" data-bs-toggle="collapse" href="#panier" role="button"
+                              aria-expanded="false" aria-controls="#panier">
+                              <img class="icon-panier" src="img/panier.svg" alt="Logo-panier">
+                              <div class="nombre-panier"><span class="valeur-nb-panier">7</span></div>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-6 cadre-prix">
+                      <span> 19.55 €</span>
+                  </div>
+              </div>
+
               </div>
             </div>
           </div>
@@ -1221,16 +1405,47 @@
       <!--section contact et map-->
 
       <div class="container row" id="contact">
-        <div class="map-section col-md-6 col-12">
+         <!-- Bandeau navigation mobile -->
+         <div class="sticky-top d-md-none">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-3 text-start"><a class="w-auto burger" data-bs-toggle="collapse" href="#menu"><img
+                  class="icon" src="img/menu-burger_icon.svg" alt="Icon of bascket"></a></div>
+            <div class="col-6 text-center"><a class="button-mobile btn-yellow" href="#contact"> CONTACT</a></div>
+            <div class="col-3 text-end"><a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+              aria-controls="#panier"><img class="icon" src="img/panier.svg"
+                  alt="Icon of bascket"></a></div>
+          </div>
+        </div>
+        <!-- Bandeau navigation desktop -->
+        <div class="row align-items-center d-none d-md-flex m-2">
+          <div class="col">
+            <img class="logo-mini" src="img/logo.png" alt="Restaurant's logo">
+          </div>
+          <div class="col">
+            <div class="text-center"><a class="button-dark dark-blue" href="#a-propos"> À PROPOS</a></div>
+          </div>
+          <div class="col">
+            <div class="text-center"><a class="button-dark dark-red" href="#la-carte"> LA CARTE</a></div>
+          </div>
+          <div class="col">
+            <div class="text-center"><a class="button-mobile btn-yellow" href="#contact"> CONTACT</a></div>
+          </div>
+          <div class="col text-end"><a class="w-auto" data-bs-toggle="collapse" href="#panier" role="button" aria-expanded="false"
+            aria-controls="#panier"><span class="d-none d-md-inline mon-panier">MON
+                PANIER</span><img class="icon" src="img/panier.svg" alt="Icon of bascket"></a></div>
+        </div>
+        <!-- Bandeau navigation desktop -->
+        <div class="map-section col-md-6 col-12 text-end">
           <iframe width="384" height="290" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
             src="https://www.openstreetmap.org/export/embed.html?bbox=5.452871918678284%2C47.06629258770576%2C5.456165671348572%2C47.068411855434455&amp;layer=mapnik&amp;marker=47.06735223210249%2C5.454518795013428"
             style="border: 1px solid black"></iframe>
-          <button type="button" class="btn btn-blue px-4 btn-inside"
+        <button type="button" class="btn btn-blue px-4 btn-inside m-3"
             href="https://www.openstreetmap.org/?mlat=47.06735&amp;mlon=5.45452#map=18/47.06735/5.45452">
             itinéraire
             </a>
           </button>
-        </div>
+        </div>          
+
         <div id="form-section" class="form-section col-md-6 col-12">
           <!-- <form method="POST" action="mailto:email@tourdepize.com">
       <input type="text" size="10" maxlength="40" name="name" />
@@ -1244,8 +1459,12 @@
             <input type="button" id="form-btn" value="Submit" class="btn btn-blue px-4">
           </form>
         </div>
+        <div class="facebook mt-5"><a href="https://www.facebook.com/latourdepize/"><img src="img/facebook.svg" alt="logo facebook">https://www.facebook.com/latourdepize/</a></div>
+      <adress class="adress">
+        <span>La tour de Pize</span>
+        <br> 1 rue du Fourney 39100 Choisey
+      </adress>
       </div>
-
 
 
       <!--fin section contact et map-->
@@ -1255,14 +1474,14 @@
 
     </div>
 </body>
-<footer>
-  <!-- 
+<!-- <footer>
+  
     <adress>
       <span>La tour de Pize</span>
       <br> 1 rue du Fourney 39100 Choisey
-    </adress> -->
+    </adress>
 
-</footer>
+</footer> -->
 
 
 </html>

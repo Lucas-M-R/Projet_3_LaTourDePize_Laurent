@@ -83,7 +83,7 @@ a:hover{
 
 
 /* Boutton classique (comme dans le home) */
- .button {
+ .button{
      height: 7.5vh;
      width: 20vh;
      border: none;
@@ -156,11 +156,113 @@ a:hover{
     background-color: #3c3c3c;
 }
 
+/* Le pannier */
+.btn-panier{
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    background-color: #BC3718;
+    box-shadow: black 3px 3px 3px;
+    position: relative;
+}
+.btn-panier-flottant{
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    background-color: #BC3718;
+    box-shadow: black 3px 3px 3px;
+    margin-bottom: 81px;
+    z-index: 10000;
+}
+.icon-panier{
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+.icon-big{
+    height: 6vh;
+    width: 6vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+.nombre-panier{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: white;
+    border: solid #BC3718 4px;
+    position: absolute;
+    top: 17px;
+    left: 40px;
+    color: #bc3718;
+    box-shadow: black 3px 3px 3px;
+}
+#panier{
+    width: 100wh;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    z-index: 100000;
+}
+.choix-x{
+    /* width: 80%;
+    height: 40px; */
+    background-color: rgba(196, 196, 196, 0.31);
+    border: solid #514ab4 2px;
+    color: #f3d4a9;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px;
+}
+.prix-choix{
+    color: black;
+}
+.cadre-prix{
+    width: 40%;
+    height: 40px;
+    background-color: white;
+    border: solid #BC3718 4px;
+    border-radius: 22px;
+    color: #373737;
+    margin-top: 30px;
+    /* margin-left: 276px; */
+    font-size: 22px;
+    max-width: 200px;
+}
+.ligne-prix{
+    width: 80%;
+}
+.btn-commander{
+    background-color: #d88e35;
+    border: solid #f3d4a9 1px;
+    font-size: 30px;
+    font-family: Good Mood;
+    color: #f3d4a9;
+    border-radius: 22px;
+    width: 70%;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
 .mon-panier{
+    vertical-align: middle;
     color: white;
     font-family: Good Mood;
     font-size: 3vh;
 }
+.mon-panier-panier{
+    vertical-align: middle;
+    color: white;
+    font-family: Good Mood;
+    font-size: 5vh;
+    margin-right: 10px;
+}
+/* Fin le panier */
+
+
 /* Dans à propos */
 .light{
     font-family: Rubik light;
@@ -181,6 +283,16 @@ a:hover{
     margin: auto;
     margin-top: 3vh;
     display: flex;
+}
+.valeur-nb-panier-2{
+    font-size: 22px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.valeur-nb-panier{
+    font-size: 22px;
+    vertical-align: middle;
+    margin-left: 0px;
 }
 .center{
     display: flex;
@@ -357,6 +469,20 @@ button.carousel-control-next{
      font-weight: 400;
  }
 
+ .facebook img{
+    width: 50px;
+    height: 50px;
+ }
+ .facebook a{
+     text-decoration: underline;
+     color: #ffffff;
+     
+ }
+ .facebook, .adress{
+     text-align: center;
+ }
+
+
  @media screen and (min-width: 1024px)
  {
      #home{
@@ -368,4 +494,36 @@ button.carousel-control-next{
     .frise-menu-desktop{
         /* background: url(img/frise.png); */
         max-width: 750px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    #collapseThree{
+        width: 90vW;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+    .carousel-item{
+        display: block;
+    }
  }
+ 
+  /*Animation home Yamina*/
+  @keyframes defile {
+    0% { background-position-x: -300vw; }
+  100% { background-position-x: 100vw; }
+}
+
+
+#bg-header {
+position : absolute;
+top :20%;
+left:0;
+width: 100%;
+height: 80%;
+background: no-repeat url("img/bg-header.png") -500px;
+animation: defile 10s alternate infinite;
+opacity: 0.6;
+filter:alpha(opacity=60);
+z-index: -1
+}
