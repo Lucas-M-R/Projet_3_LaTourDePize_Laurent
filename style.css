@@ -19,10 +19,10 @@
 
 
      /* empêcher le scroll de la page */
-     /* overflow-y: hidden;
-     overflow-x: hidden; */
+     overflow-y: hidden;
+     overflow-x: hidden;
     /* width: 100%; */
-    height: 100vh;
+    /* height: 100vh; */
 
      font-family: 'Rubik', sans-serif;
      color: white;
@@ -536,7 +536,7 @@ button.carousel-control-next{
 
 #bg-header {
 position : absolute;
-top :%;
+
 left:0;
 width: 100%;
 height: 100%;
